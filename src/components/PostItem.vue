@@ -1,7 +1,12 @@
 <template>
   <div class="post">
-    <div><strong>Название: </strong>{{post.title}}</div>
-    <div><strong>Описание: </strong>{{post.body}}</div>
+    <div>
+      <div><strong>Название: </strong>{{post.title}}</div>
+      <div><strong>Описание: </strong>{{post.body}}</div>
+    </div>
+    <div class="post-btns">
+      <button>Удалить</button>
+    </div>
   </div>
 </template>
 
@@ -21,5 +26,13 @@ export default {
   margin-top: 15px;
   padding: 20px;
   border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-btns{
+  /* TODO:50:00 */
+
 }
 </style>
